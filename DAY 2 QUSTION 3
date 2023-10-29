@@ -1,0 +1,22 @@
+3. kiran bought 1kg plastic for ₹10, but sold 1kg plastic for ₹12. How much money does she earn on selling 1kg plastic?
+Write a c++ program using default constructor.?
+
+ANSWER:
+
+#include <iostream>
+class PlasticTransaction {
+private:
+    float costPrice, sellingPrice, profit;
+public:
+    PlasticTransaction() : costPrice(10.0f), sellingPrice(12.0f), profit(sellingPrice - costPrice) {}
+    float calculateEarnings(float weight) {
+        return weight * profit;
+    }
+};
+int main() {
+    PlasticTransaction transaction;
+    float weight = 1.0;
+    float earnings = transaction.calculateEarnings(weight);
+    std::cout << "Kiran earns ₹" << earnings << " by selling 1kg of plastic." << std::endl;
+    return 0;
+}
