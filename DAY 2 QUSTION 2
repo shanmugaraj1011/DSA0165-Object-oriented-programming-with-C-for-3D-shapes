@@ -1,0 +1,20 @@
+2.One bus can carry 48 children how many children can three buses carry write a c++ program using parameterised constructor ?
+
+ANSWER:
+
+#include <iostream>
+class Bus {
+private:
+    int capacity;
+public:
+    Bus(int capacity) : capacity(capacity) {}
+    int calculateCapacity(int numBuses) {
+        return capacity * numBuses;
+    }
+};
+int main() {
+    Bus bus(48);
+    int totalCapacity = bus.calculateCapacity(3);
+    std::cout << "Three buses can carry " << totalCapacity << " children." << std::endl;
+    return 0;
+}
