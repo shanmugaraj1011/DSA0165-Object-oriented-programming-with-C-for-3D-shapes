@@ -1,0 +1,4 @@
+a. If the user enters 0, the output will be: "less than 10"
+b. If the user enters 15, the output will be: "greater than 5"
+c. If the user enters 7, the output will be: "greater than 5"
+d. The output will be "not interesting" when the value of n is between 5 and 10 (inclusive).
