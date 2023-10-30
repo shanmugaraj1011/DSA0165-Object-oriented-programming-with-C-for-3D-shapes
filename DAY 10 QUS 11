@@ -1,0 +1,5 @@
+int n;
+do {
+    cout << "Enter a non-negative integer: ";
+    cin >> n;
+} while (n < 0);
