@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class OverloadExample {
+public:
+    void display(int a) {
+        cout << "Integer: " << a << endl;
+    }
+
+    void display(double b) {
+        cout << "Double: " << b << endl;
+    }
+
+    void display(char c) {
+        cout << "Character: " << c << endl;
+    }
+};
+
+int main() {
+    OverloadExample obj;
+    obj.display(5);
+    obj.display(3.14);
+    obj.display('A');
+    return 0;
+}
