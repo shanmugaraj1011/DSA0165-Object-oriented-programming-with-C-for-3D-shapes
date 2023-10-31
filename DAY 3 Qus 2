@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class Point {
+private:
+    int x, y;
+public:
+    Point(int a, int b) : x(a), y(b) {}
+
+    Point operator+(Point const &obj) {
+        Point res(0, 0);
+        res.x = x + obj.x;
+        res.y = y + obj.y;
+        return res;
+    }
+
+    void display() {
+        cout << "X: " << x << ", Y: " << y << endl;
+    }
+};
+
+int main() {
+    Point p1(3, 4);
+    Point p2(2, 5);
+    Point p3 = p1 + p2; // Overloaded '+' operator
+    p3.display();
+    return 0;
+}
